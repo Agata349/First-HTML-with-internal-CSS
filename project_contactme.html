@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanish is great</title>
+    <style>
+        h1,
+        h2,
+        img,
+        p,
+        footer,
+        button,
+        a,
+        span {
+            display: block;
+            margin: 15px auto;
+            text-align: center;
+            padding: 20px 20px 5px 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16px;
+            color: #fff;
+            line-height: 1.5;
+        }
+
+        h1 {
+            font-size: 25px;
+            font-weight: bold;
+            border: solid 1px #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 30px 20px 10px 20px;
+            background-image: linear-gradient(to top, #B5440A 0%, #DF9A01 100%);
+        }
+
+        h2 {
+            padding: 0;
+        }
+
+        img {
+            max-width: 60%;
+            border: solid 3px grey;
+            padding: 0;
+            border-radius: 10px;
+        }
+
+        p {
+            text-align: center;
+            padding: 5px;
+        }
+
+        a {
+            text-align: left;
+            padding: 0;
+            margin: 0px;
+            display: inline;
+        }
+
+        span {
+            background-image: linear-gradient(to top, #DF9A01 0%, #B5440A 100%);
+            border-radius: 5px;
+            padding: 3px;
+            margin: 10px auto;
+        }
+
+        footer {
+            font-size: 12px;
+            font-family: monospace;
+            margin: 5px 5px 5px 5px;
+            padding: 5px;
+        }
+
+        .container {
+            width: 50%;
+            margin: 12px auto;
+            padding: 15px;
+            background-image: linear-gradient(to top, #B5440A 0%, #DF9A01 100%);
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: chocolate;
+            color: #fff;
+            font-size: 18px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 40px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            transition: all 200ms ease-in-out;
+        }
+
+        button:hover {
+            cursor: pointer;
+            opacity: 0.5;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            I love learning Spanish
+        </h1>
+        <h2>
+            I think Spanish is a beautiful language
+            <br />
+            - moreover is easy to learn!
+        </h2>
+        <img src="https://www.bplanresources.com/wp-content/uploads/2020/04/Program-Logic-Spanish-Language-Class-Daniela.jpg"
+            alt="Image with Spanish words" />
+        <p>
+            I enjoy learning Spanish, regardless the accent (all of them are interesting and sound nice!). Also Spanish
+            and Mexican food is delicious. It's amazing how many people speak Spanish around the world. My dream is to
+            visit all of the Spanish language countries.
+            <br />
+            <strong><em>¿Y tú, hablas español?</em></strong>
+            <span>
+                <a href="https://preply.com" target="_blank">Check this website</a> and find a Spanish native speaker.
+                If you need any tips about other ways to learn Spanish please let me know 😊
+            </span>
+            <hr>
+            <button>
+                <a href="mailto:agata.piekarczyk90@gmail.com">Contact me</a>
+            </button>
+            <hr>
+        <footer>
+            Coded by Agata Piekarczyk
+        </footer>
+    </div>
+    <script>
+        function contactMe() {
+            let name = prompt("Hola! What is your name? - ¿Cómo te llamas?");
+            let emoji = prompt("What is your favourite emoji? - ¿Cuál es tu emoji favorito?");
+            if (name.length > 0) {
+                alert("Thank you " + name + ". You can contact me if you need any tips. In the meantime try to watch some Spanish series! 👌" + emoji);
+            } else {
+                alert("Please enter your name" + emoji);
+            }
+        }
+
+        let contactMeButton = document.querySelector("button");
+        contactMeButton.addEventListener("click", contactMe);
+
+    </script>
+</body>
+
+</html>
